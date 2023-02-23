@@ -1,0 +1,39 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    background-color: #1F1F3D;
+    background-size: 100%;
+    width: 25%;
+}
+
+aside h1 {
+    color: #E9E9F3;
+    margin: 0.8em 0em 0.8em 0.8em;
+    font-size: 1.5em;
+}
+
+.filter-aside-section {
+    border: 2px solid #353567;
+}
+
+h4 {
+    color: #BFBFDD;
+    margin-left: 1em;
+    font-size: 1.2em;
+} 
+
+.show-starred {
+    color: #E9E9F3;
+    background-color: #5356A4;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 0.3em 0em 1.2em 0.8em;
+    padding: 0.4em 1.3em 0.4em 1em;
+}
