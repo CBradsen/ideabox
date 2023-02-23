@@ -37,3 +37,37 @@ h4 {
     margin: 0.3em 0em 1.2em 0.8em;
     padding: 0.4em 1.3em 0.4em 1em;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 30px; */
+  background-color: #A9AAD2;
+  max-width: 700px;
+  }
+  #title-input {
+  border: 2px solid #1F1F3d;
+  margin: 1em 2em 2em 2em;
+  padding: 10px; 
+  }
+  
+  #body-input {
+    border: 2px solid #1F1F3d;
+    margin: 1em 2em 2em 2em;
+    padding: 40px; 
+    width: 60%;
+  }
+  
+  #magnify-icon{
+    border: 2px solid #A9AAD2;
+    max-width: 30px;
+  
+  }
+  
+  .save-button{
+    background-color: #1F1F3d;
+    color: white;
+    margin: 1em 2em 2em 2em;
+    padding: 10px; 
+  }
