@@ -1,6 +1,75 @@
 * {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
+
+.idea-boxes-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: #EAEAF4;
+}
+
+.idea-box {
+ max-width: 225px;
+ min-width: 225px;
+ margin: 10px;
+ border: 2px solid #1F1F3D;
+}
+
+.card-top {
+  background-color: #1F1F3D;
+  border: 1px solid #1F1F3D;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-height: 40px;
+}
+
+#card-star, #delete-icon, #comment-plus-icon {
+  max-width: 30px;
+}
+
+h5 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0px; 
+}
+
+.card-body {
+  background-color: #FFFFFF;
+  padding: 15px;
+  border: 1px solid #1F1F3D;
+}
+
+#card-text {
+  font-size: 20px;
+  font-weight: 200;
+  color: #1F1F3D
+}
+
+.card-bottom {
+  background-color: #1F1F3D;
+  border: 1px solid #1F1F3D;
+  padding: 0px; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px;
+  max-height: 40px;
+}
+
+#comment {
+  color: #E9E9F3;
+  background-color: #5356A4;
+  padding-left: 4px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+}
+
+
 
 body {
     display: flex;
@@ -71,3 +140,4 @@ h4 {
     margin: 1em 2em 2em 2em;
     padding: 10px; 
   }
+
