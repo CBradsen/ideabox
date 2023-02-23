@@ -118,7 +118,7 @@ h4 {
   .form-style{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     padding: 10em 10em;
     width: 700px; 
   }
