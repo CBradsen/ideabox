@@ -3,9 +3,8 @@
 }
 
 .idea-box {
- max-width: 250px;
- margin: 0 auto;
- margin-top: 5px;
+ max-width: 225px;
+ margin: 15px;
  border: 2px solid #1F1F3D;
 }
 
@@ -16,6 +15,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-height: 40px;
 }
 
 #card-star, #delete-icon, #comment-plus-icon {
@@ -25,7 +25,7 @@
 h5 {
   font-size: 22px;
   font-weight: bold;
-  /* margin: 5 15 5 15 */
+  margin: 0px; 
 }
 
 .card-body {
@@ -34,19 +34,26 @@ h5 {
 }
 
 #card-text {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 200;
 }
 
 .card-bottom {
   background-color: #1F1F3D;
   border: 1px solid #1F1F3D;
-  /* padding: 4px; */
+  padding: 0px; 
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  align-items: center;
+  margin: 0px;
+  max-height: 40px;
 }
+
 #comment {
   color: #E9E9F3;
   background-color: #5356A4;
-  /* padding: 2px */
+  padding-left: 4px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
 }
