@@ -1,5 +1,6 @@
 * {
   font-family: 'Open Sans', sans-serif;
+
 }
 
 .idea-boxes-container {
@@ -109,35 +110,60 @@ h4 {
 
 .form {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* gap: 30px; */
+  justify-content: space-around;
   background-color: #A9AAD2;
-  max-width: 700px;
+  padding: auto;
   }
+
+  .form-style{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10em 10em;
+    width: 700px; 
+  }
+
   #title-input {
-  border: 2px solid #1F1F3d;
-  margin: 1em 2em 2em 2em;
-  padding: 10px; 
+  border: 3px solid #353567;
+  padding: 3%;
+  margin-bottom: 2em;
+  font-weight: bold;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 22px;
   }
   
   #body-input {
-    border: 2px solid #1F1F3d;
-    margin: 1em 2em 2em 2em;
-    padding: 40px; 
-    width: 60%;
+    border: 3px solid #353567;
+    padding: 45px; 
+    margin-bottom: 2em;
+    font-weight: bold;
+  }
+
+  .searchbar-container{
+    display: flex;
+    flex-direction: row;
   }
   
-  #magnify-icon{
-    border: 2px solid #A9AAD2;
-    max-width: 30px;
-  
+  #magnify-glass{
+    border: 3px solid #5356A4;
+    background-color: #353567;
+    max-width: 45px;
   }
   
   .save-button{
-    background-color: #1F1F3d;
-    color: white;
-    margin: 1em 2em 2em 2em;
-    padding: 10px; 
+    background-color: #353567;
+    border: 5px #1F1F3D;
+    color: #E9E9F3;
+    padding: 3%;
+    font-weight: bold; 
+    margin-bottom: 2em;
   }
 
+  #searchbar{
+    border: 3px #353567;
+    padding: 3%; 
+    width: 700px;
+  }
