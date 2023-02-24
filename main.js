@@ -19,12 +19,20 @@ saveBtn.addEventListener('click', function(event) {
 
 function hoverSaveBtn() {
     if (inputTitle.value && inputBody.value) {
-        saveBtn.classList.add("activeSaveBtn");
-        saveBtn.classList.add("hover");
+        activateSaveBtn();
     } else {
-        saveBtn.classList.remove("hover");
-        saveBtn.classList.remove("activeSaveBtn");
+        deactivateSaveBtn();
     }
+}
+
+function activateSaveBtn() {
+    saveBtn.classList.add("activeSaveBtn");
+    saveBtn.classList.add("hover");
+}
+
+function deactivateSaveBtn() {
+    saveBtn.classList.remove("hover");
+    saveBtn.classList.remove("activeSaveBtn");
 }
 
 function saveIdea() {
@@ -39,6 +47,7 @@ function renderCard(idea) {
     clearInput();
 }
 
-//SAVE BTN:
-    // render that card on the DOM (renderToDOM function)
-    // clear input fields (clearInputFields function) when clicking save button
+function clearInput() {
+    form.reset();
+    deactivateSaveBtn();
+}
