@@ -122,7 +122,7 @@ label {
  max-width: 350px;
  min-width: 225px;
  margin: 10px;
- border: 2px solid #1F1F3D;
+ /* border: 2px solid #1F1F3D; */
 }
 
 .card-top {
@@ -149,12 +149,13 @@ h5 {
   background-color: #FFFFFF;
   padding: 15px;
   border: 1px solid #1F1F3D;
+  overflow-wrap: break-word;
 }
 
 #card-text {
   font-size: 30px;
   font-weight: 200;
-  color: #1F1F3D
+  color: #1F1F3D;
 }
 
 .card-bottom {
