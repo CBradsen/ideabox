@@ -94,6 +94,11 @@ label {
   margin-bottom: 2em;
 }
 
+.hover:hover{
+  background-color: #1F1F3D;
+  cursor: pointer;
+}
+
 #searchbar{
   border: 3px #353567;
   padding: 3%; 
