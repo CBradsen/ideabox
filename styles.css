@@ -86,7 +86,7 @@ label {
   
 .save-button{
   font-size: 26px;
-  background-color: #353567;
+  background-color: #5356A4;
   border: 3px solid #5356A4;
   color: #E9E9F3;
   padding: 3%;
@@ -95,8 +95,11 @@ label {
 }
 
 .hover:hover{
-  background-color: #1F1F3D;
   cursor: pointer;
+}
+
+.activeSaveBtn {
+  background-color: #1F1F3D;
 }
 
 #searchbar{

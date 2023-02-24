@@ -4,8 +4,8 @@ class Idea {
     this.title = title;
     this.body = body;
     this.star = false;
-
   }
+  
   updateIdea() {
     if (this.star === false) {
       this.star = true;
