@@ -70,6 +70,7 @@ function clearInput() {
 }
 
 function deleteCard(event) {
+    event.preventDefault();
     if (event.target.id === "delete-icon") {
         for (var i = 0; i < ideas.length; i++) {
             if (event.target.parentElement.parentElement.id === ideas[i].id.toString()) {
