@@ -138,7 +138,7 @@ label {
   max-height: 40px;
 }
 
-#card-star, #delete-icon, #comment-plus-icon {
+.card-star, #delete-icon, #comment-plus-icon {
   max-width: 30px;
 }
 
