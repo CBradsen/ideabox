@@ -1,97 +1,152 @@
 * {
   font-family: 'Open Sans', sans-serif;
+  
 }
+
 
 body {
-    display: flex;
+  display: flex;
     flex-direction: row;
+    justify-content: center;
+    /* height: auto;  
+    /* max-width: 200px;  */
+    /* margin: 0, auto; */ 
+	/* max-width: 1080px;  */
+	
+
+
+	/* float: !important;  */
 }
 
-aside {
+
+/* aside {
     background-color: #1F1F3D;
     background-size: 100%;
-    width: 45%;
+    width: 25vw;
+    
+} */
+
+
+aside {
+  background-color: #1F1F3D;
+  width: 25vw;
+  height: auto;
 }
 
+/* .form {
+  display: flex;
+  justify-content: space-around;
+  background-color: #A9AAD2;
+  width: 75vw;
+  height: 50vh;
+  padding: auto;
+} */
+
+
+/* .form {
+  display: flex;
+  justify-content: space-around;
+  background-color: #A9AAD2;
+  padding: auto;
+  } */
+
+/* .form-style { */
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: space-around; */
+  /* padding: 10em 10em;
+  max-width: 100vw;  */
+/* } */
+
 aside h1 {
-    color: #E9E9F3;
-    margin: 0.8em 0em 0.8em 0.8em;
-    font-size: 1.5em;
+  color: #E9E9F3;
+  font-size: 2.4em;
+  padding-left: 1em;
+  
 }
 
 .filter-aside-section {
-    border: 2px solid #353567;
+  border-top: 3px solid #353567;
+  border-bottom: 3px solid #353567;
+
 }
 
 h4 {
     color: #BFBFDD;
-    margin-left: 1em;
-    font-size: 1.2em;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding-left: 1em;
 } 
 
 .show-starred {
     color: #E9E9F3;
     background-color: #5356A4;
-    font-size: 1.6em;
+    font-size: 2.2em;
     font-weight: bold;
-    margin: 0.3em 0em 1.2em 0.8em;
-    padding: 0.4em 1.3em 0.4em 1em;
+    margin: .5em 1em 1.6em 1em;
+    padding: .4em 1.2em .5em .9em;
 }
 
 .form {
   display: flex;
-  justify-content: space-around;
+  justify-content: center; 
   background-color: #A9AAD2;
-  padding: auto;
+  width: 75vw
   }
 
 .form-style{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 10em 10em;
-  width: 700px; 
+  /* justify-content: space-around; */
+  padding: 1em 30em 4em 30em; 
+
+  /* max-width: 50vw; */
 }
 
 #title-input {
-  border: 3px solid #5356A4;
-  padding: 3%;
-  margin-bottom: 2em;
+  border: .3em solid #5356A4;
+  border-radius: 6px;
+  padding: 4%;
+  margin: 1em 0em;
   font-weight: bold;
 }
 
 label {
   color: #1F1F3D;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 1.9em;
 }
   
 #body-input {
-  border: 3px solid #5356A4;
-  padding: 45px; 
-  margin-bottom: 2em;
+  border: .3em solid #5356A4;
+  border-radius: 6px;
+  padding: 10%; 
+  margin: 1em 0em;
   font-weight: bold;
 }
 
 .searchbar-container{
   display: flex;
   flex-direction: row;
+  border: .19em solid #5356A4;
+  border-radius: 6px;
 }
   
 #magnify-glass{
-  border: 3px solid #5356A4;
   background-color: #353567;
-  max-width: 45px;
+  padding: .2em 1.5em;
+  max-width: 3em;
 }
   
 .save-button{
-  font-size: 26px;
+  font-size: 2.5em;
   background-color: #5356A4;
-  border: 3px solid #5356A4;
+  border: .1em solid #5356A4;
+  border-radius: 6px;
   color: #E9E9F3;
-  padding: 3%;
+  padding: 2%; 
   font-weight: bold; 
-  margin-bottom: 2em;
+  margin: 1em 0em;
 }
 
 .hover:hover{
@@ -102,11 +157,12 @@ label {
   background-color: #1F1F3D;
 }
 
-#searchbar{
-  border: 3px #353567;
-  padding: 3%; 
-  width: 700px;
-  font-size: 20px;
+#searchbar {
+  border: 3px solid #5356A4;
+  border-radius: 6px;
+  padding: 2.5%; 
+  width: 40vw;
+  font-size: 1.9em;
   color: #5356A4;
 }
 
@@ -116,33 +172,35 @@ label {
   justify-content: flex-start;
   flex-wrap: wrap;
   background-color: #EAEAF4;
+  width: 75vw
 }
 
 .idea-box {
- max-width: 350px;
- min-width: 225px;
- margin: 10px;
+  min-width: 300px;
+  max-width: 450px;
+  height: auto;
+  margin: 2em 1em; 
  /* border: 2px solid #1F1F3D; */
 }
 
 .card-top {
   background-color: #1F1F3D;
   border: 1px solid #1F1F3D;
-  padding: 4px;
+  padding: .1em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-height: 40px;
+  max-height: 3em;
 }
 
 #card-star, #delete-icon, #comment-plus-icon {
-  max-width: 30px;
+  max-width: 4em;
 }
 
 h5 {
-  font-size: 42px;
+  font-size: 2em;
   font-weight: bold;
-  margin: 0px; 
+  margin: 0em 0em 0em 1em;
 }
 
 .card-body {
@@ -153,9 +211,10 @@ h5 {
 }
 
 #card-text {
-  font-size: 30px;
+  font-size: 2.2em;
   font-weight: 200;
   color: #1F1F3D;
+  margin: .5em 1em 1em 1em;
 }
 
 .card-bottom {
@@ -172,8 +231,7 @@ h5 {
 #comment {
   color: #E9E9F3;
   background-color: #5356A4;
-  padding-left: 4px;
-  margin-top: 0px;
+  /* padding: .3em 2em .3em .3em; */
   margin-bottom: 0px;
-  
+  /* font-size: 1.3em; */
 }
