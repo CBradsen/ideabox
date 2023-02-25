@@ -10,7 +10,7 @@ var cardBody = document.getElementById('card-text');
 var ideaBoxContainer = document.querySelector('.idea-boxes-container');
 
 form.addEventListener('input', hoverSaveBtn);
-ideaBoxContainer.addEventListener('click', deleteCard);
+ideaBoxContainer.addEventListener('click', handleCard);
 saveBtn.addEventListener('click', function(event) {
     event.preventDefault();
     if (inputTitle.value && inputBody.value) {
@@ -48,7 +48,7 @@ function renderCard() {
         ideaBoxContainer.innerHTML += 
         `<article class="idea-box" id="${ideas[i].id}">
             <div class="card-top" id="card-header">
-                <img src="./assets/star-active.svg" alt="red-star-icon" id="card-star">
+                <img src="./assets/star.svg" alt="red-star-icon" class="card-star" id="${ideas[i].id}-star">
                 <img src="./assets/delete.svg" alt="white-delete-icon" id="delete-icon">
             </div>
             <div class="card-body" id="text-box-card">
@@ -71,12 +71,38 @@ function clearInput() {
 
 function deleteCard(event) {
     event.preventDefault();
-    if (event.target.id === "delete-icon") {
-        for (var i = 0; i < ideas.length; i++) {
-            if (event.target.parentElement.parentElement.id === ideas[i].id.toString()) {
-                ideas.splice(i, 1);
-            }
+    
+}
+
+function removeCardFromArray(event){
+    for (var i = 0; i < ideas.length; i++) {
+        if (event.target.parentElement.parentElement.id === ideas[i].id.toString()) {
+            ideas.splice(i, 1);
         }
     }
-    renderCard();
 }
+
+function handleCard(event){
+    event.preventDefault();
+    if (event.target.id === "delete-icon") {
+        removeCardFromArray(event);
+        renderCard();
+    } else if (event.target.id.includes("-star")){
+        toggleStars(event);
+    }   
+}
+
+function toggleStars(event){
+    for (var i = 0; i < ideas.length; i++) {
+        if(event.target.parentElement.parentElement.id === ideas[i].id.toString()){
+            ideas[i].updateIdea();
+        } 
+        if(ideas[i].star === true){
+            document.getElementById(`${ideas[i].id}-star`).src = "./assets/star-active.svg";  
+        } else {
+            document.getElementById(`${ideas[i].id}-star`).src = "./assets/star.svg";
+        }
+    }
+}
+
+
