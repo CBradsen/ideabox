@@ -83,36 +83,26 @@ function removeCardFromArray(event){
 }
 
 function handleCard(event){
-    console.log(event.target.id)
-    event.preventDefault()
+    event.preventDefault();
     if (event.target.id === "delete-icon") {
-        removeCardFromArray(event)
-        renderCard()
-    } else if(event.target.id.includes("-star")){
-        for (var i = 0; i < ideas.length; i++) {
-            if(event.target.parentElement.parentElement.id === ideas[i].id.toString()){
-                ideas[i].updateIdea()
-            } 
-            if(ideas[i].star === true){
-                document.getElementById(`${ideas[i].id}-star`).src = "./assets/star-active.svg"   
-            } else {
-                document.getElementById(`${ideas[i].id}-star`).src = "./assets/star.svg" 
-            }
-        }
-    }
-    
-   
+        removeCardFromArray(event);
+        renderCard();
+    } else if (event.target.id.includes("-star")){
+        toggleStars(event);
+    }   
 }
 
-// function toggleStars(){
-//     var starIcon = document.getElementById("card-star")
-//     if (starIcon.src === "./assets/star.svg"){
-//         starIcon.innerText = "./assets/star-active.svg"  
-//         renderCard()
-//     } else if (document.getElementById("card-star").src === "./assets/star-active.svg"){
-//         document.getElementById("card-star").src = "./assets/star.svg"
-//     }
-//     
-// }
+function toggleStars(event){
+    for (var i = 0; i < ideas.length; i++) {
+        if(event.target.parentElement.parentElement.id === ideas[i].id.toString()){
+            ideas[i].updateIdea();
+        } 
+        if(ideas[i].star === true){
+            document.getElementById(`${ideas[i].id}-star`).src = "./assets/star-active.svg";  
+        } else {
+            document.getElementById(`${ideas[i].id}-star`).src = "./assets/star.svg";
+        }
+    }
+}
 
 
