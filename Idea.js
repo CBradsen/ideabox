@@ -11,6 +11,6 @@ class Idea {
       this.star = true;
     } else {
       this.star = false
-    }
+    }   
   }
 }
