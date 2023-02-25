@@ -87,6 +87,7 @@ function handleCard(event){
     event.preventDefault()
     if (event.target.id === "delete-icon") {
         removeCardFromArray(event)
+        renderCard()
     } else if(event.target.id.includes("-star")){
         for (var i = 0; i < ideas.length; i++) {
             if(event.target.parentElement.parentElement.id === ideas[i].id.toString()){
@@ -100,7 +101,7 @@ function handleCard(event){
         }
     }
     
-    // renderCard()
+   
 }
 
 // function toggleStars(){
