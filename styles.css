@@ -15,31 +15,6 @@ aside {
   height: 100vh
 }
 
-/* .form {
-  display: flex;
-  justify-content: space-around;
-  background-color: #A9AAD2;
-  width: 75vw;
-  height: 50vh;
-  padding: auto;
-} */
-
-
-/* .form {
-  display: flex;
-  justify-content: space-around;
-  background-color: #A9AAD2;
-  padding: auto;
-  } */
-
-/* .form-style { */
-  /* display: flex;
-  flex-direction: column; */
-  /* justify-content: space-around; */
-  /* padding: 10em 10em;
-  max-width: 100vw;  */
-/* } */
-
 aside h1 {
   color: #E9E9F3;
   font-size: 2.4em;
@@ -175,10 +150,8 @@ label {
   max-height: 3.4em;
 }
 
-
 .card-star, #delete-icon, #comment-plus-icon {
   max-width: 3.2em;
-
 }
 
 h5 {
@@ -215,9 +188,7 @@ h5 {
   max-height: 3.4em;
 }
 
-
 #white-comment {
   color: #E9E9F3;
   font-size: 1.5em;
 }
-
