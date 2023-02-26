@@ -5,12 +5,12 @@ var saveBtn = document.querySelector('.save-button');
 var inputTitle = document.getElementById('title-input');
 var inputBody = document.getElementById('body-input');
 var form = document.querySelector('.form-style');
-var cardTitle = document.querySelector('h5');
-var cardBody = document.getElementById('card-text');
 var ideaBoxContainer = document.querySelector('.idea-boxes-container');
+var searchBar = document.getElementById('searchbar');
 
 form.addEventListener('input', hoverSaveBtn);
-ideaBoxContainer.addEventListener('click', deleteCard);
+ideaBoxContainer.addEventListener('click', handleCard);
+// searchBar.addEventListener('keyup', filterCards);
 saveBtn.addEventListener('click', function(event) {
     event.preventDefault();
     if (inputTitle.value && inputBody.value) {
@@ -48,7 +48,7 @@ function renderCard() {
         ideaBoxContainer.innerHTML += 
         `<article class="idea-box" id="${ideas[i].id}">
             <div class="card-top" id="card-header">
-                <img src="./assets/star-active.svg" alt="red-star-icon" id="card-star">
+                <img src="./assets/star.svg" alt="red-star-icon" id="card-star">
                 <img src="./assets/delete.svg" alt="white-delete-icon" id="delete-icon">
             </div>
             <div class="card-body" id="text-box-card">
@@ -60,6 +60,7 @@ function renderCard() {
                 <p id="white-comment">Comment</p>
             </div>    
         </article>`
+
     }
     clearInput();
 }
@@ -69,14 +70,43 @@ function clearInput() {
     deactivateSaveBtn();
 }
 
-function deleteCard(event) {
+function handleCard(event) {
     event.preventDefault();
     if (event.target.id === "delete-icon") {
-        for (var i = 0; i < ideas.length; i++) {
-            if (event.target.parentElement.parentElement.id === ideas[i].id.toString()) {
-                ideas.splice(i, 1);
-            }
-        }
+        removeCardFromArray(event);
+    } else if (event.target.id === "card-star") {
+        updateStar(event);
     }
     renderCard();
 }
+
+function removeCardFromArray(event) {
+    for (var i = 0; i < ideas.length; i++) {
+        if (event.target.parentElement.parentElement.id === ideas[i].id.toString()) {
+            ideas.splice(i, 1);
+        }
+    }
+}
+
+function updateStar(event) {
+    event.preventDefault();
+    for (var i = 0; i < ideas.length; i++) {
+        if (event.target.parentElement.parentElement.id === ideas[i].id.toString()) {
+            ideas[i].updateIdea();
+        } 
+            if (ideas[i].star === true) {
+                event.target.
+            }
+    }
+}
+
+// function filterCards() {
+//     var cardTitle = document.querySelector('h5');
+//     var cardBody = document.getElementById('card-text');
+
+//     if (cardTitle.innerText.toLowerCase().includes(searchBar.value.toLowerCase()) || cardBody.innerText.toLowerCase().includes(searchBar.value.toLowerCase())) {
+//         cardTitle.parentElement.parentElement.classList.remove("hidden");
+//     } else if (!searchBar.value) (
+//         renderCard()
+//     )
+// }

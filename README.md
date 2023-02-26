@@ -1,13 +1,19 @@
 ## Abstract
- <!-- ##Abstract/Elevator Pitch** (what problem is app trying to solve?) -->
- <!-- - **ONE gif** (show the highest impact feature of your app) -->
-## Set Up Instructions**
-## Contributors** (including who owned what pieces?)
+
+## Set Up Instructions
+
+## Context
+This app was created during the fourth week at Turing School of Software and Design. It took us approximately 20 hours to design the app.
+
+## Learning Goals
+- Gain an understanding of how to write clean HTML and CSS to match a provided comp
+- Understand what it looks like to have a separate data model (using a class) and DOM model
+- Incorporate & iterate over arrays in order to filter what is being displayed
+- Craft code with clean style, using small functions that show trends toward DRYness and SRP
+
+## Contributors
 - [@Soyeon (Sara) Park](https://www.linkedin.com/in/soyeon-park-530780260/)
 - [@Isaiah Richardson](https://www.linkedin.com/in/isaiah-richardson-a59174261/)
 - [@Carol Bradsen](https://www.linkedin.com/in/carol-bradsen/) 
 
-
-## Context** (time allotted, # of people, mod, learning goals)
-## Wins/Challenges** (personal or team)
-## Future Additions** (these should be entered as Issues and on your Project Board as well)
+## Wins/Challenges
