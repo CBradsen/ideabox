@@ -10,7 +10,8 @@ var searchBar = document.getElementById('searchbar');
 
 form.addEventListener('input', hoverSaveBtn);
 ideaBoxContainer.addEventListener('click', handleCard);
-// searchBar.addEventListener('keyup', filterCards);
+searchBar.addEventListener('keyup', filterCards);
+
 saveBtn.addEventListener('click', function(event) {
     event.preventDefault();
     if (inputTitle.value && inputBody.value) {
@@ -48,7 +49,7 @@ function renderCard() {
         ideaBoxContainer.innerHTML += 
         `<article class="idea-box" id="${ideas[i].id}">
             <div class="card-top" id="card-header">
-                <img src="./assets/star.svg" alt="red-star-icon" id="card-star">
+                <img src="./assets/star.svg" alt="red-star-icon" class="card-star" id="${ideas[i].id}-star">
                 <img src="./assets/delete.svg" alt="white-delete-icon" id="delete-icon">
             </div>
             <div class="card-body" id="text-box-card">
@@ -70,16 +71,6 @@ function clearInput() {
     deactivateSaveBtn();
 }
 
-function handleCard(event) {
-    event.preventDefault();
-    if (event.target.id === "delete-icon") {
-        removeCardFromArray(event);
-    } else if (event.target.id === "card-star") {
-        updateStar(event);
-    }
-    renderCard();
-}
-
 function removeCardFromArray(event) {
     for (var i = 0; i < ideas.length; i++) {
         if (event.target.parentElement.parentElement.id === ideas[i].id.toString()) {
@@ -88,25 +79,25 @@ function removeCardFromArray(event) {
     }
 }
 
-function updateStar(event) {
+function handleCard(event){
     event.preventDefault();
+    if (event.target.id === "delete-icon") {
+        removeCardFromArray(event);
+        renderCard();
+    } else if (event.target.id.includes("-star")) {
+        toggleStars(event);
+    }   
+}
+
+function toggleStars(event){
     for (var i = 0; i < ideas.length; i++) {
         if (event.target.parentElement.parentElement.id === ideas[i].id.toString()) {
             ideas[i].updateIdea();
         } 
-            if (ideas[i].star === true) {
-                event.target.
-            }
+        if (ideas[i].star === true) {
+            document.getElementById(`${ideas[i].id}-star`).src = "./assets/star-active.svg";  
+        } else {
+            document.getElementById(`${ideas[i].id}-star`).src = "./assets/star.svg";
+        }
     }
 }
-
-// function filterCards() {
-//     var cardTitle = document.querySelector('h5');
-//     var cardBody = document.getElementById('card-text');
-
-//     if (cardTitle.innerText.toLowerCase().includes(searchBar.value.toLowerCase()) || cardBody.innerText.toLowerCase().includes(searchBar.value.toLowerCase())) {
-//         cardTitle.parentElement.parentElement.classList.remove("hidden");
-//     } else if (!searchBar.value) (
-//         renderCard()
-//     )
-// }
