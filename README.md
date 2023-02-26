@@ -9,5 +9,13 @@
 
 
 ## Context** (time allotted, # of people, mod, learning goals)
-## Wins/Challenges** (personal or team)
+## Wins/Challenges
+The team recorded and celebrated our wins each day. Some of those included: 
+Working on separate features, 
+Merging multiple branches, 
+Good communication, 
+Sticking to poms and breaks, 
+Atomic commits. 
+Meeting our goals for finishing features each day
+
 ## Future Additions** (these should be entered as Issues and on your Project Board as well)
