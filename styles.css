@@ -55,52 +55,40 @@ h4 {
   padding: 1em 30em 4em 30em; 
 }
 
-#title-input {
-  width: 100%;
-  box-sizing: border-box;
-  border: .1em solid #5356A4;
-  border-radius: 6px;
-  padding: 4%;
-  margin: 1em 0em;
-  font-weight: bold;
-  font-size: xx-large;
-}
 
 label {
   color: #1F1F3D;
   font-weight: bold;
   font-size: 1.8em;
 }
-  
-#body-input {
+
+#title-input {
   width: 100%;
   box-sizing: border-box;
   border: .1em solid #5356A4;
-  border-radius: .3em;
-  padding: 10%; 
-  margin: 1em 0em;
+  border-radius: .2em;
+  padding: 4%;
+  margin: .5em 0em;
   font-weight: bold;
   font-size: xx-large;
 }
 
-.searchbar-container {
-  display: flex;
-  flex-direction: row;
+#body-input {
+  width: 100%;
+  box-sizing: border-box;
   border: .1em solid #5356A4;
-  border-radius: 6px;
-}
-  
-#magnify-glass {
-  background-color: #353567;
-  padding: .2em 1.5em;
-  max-width: 3em;
+  border-radius: .2em;
+  padding: 10%; 
+  margin: .5em 0em;
+  font-weight: bold;
+  font-size: xx-large;
 }
   
 .save-button {
   font-size: 2.5em;
   background-color: #5356A4;
   border: .1em solid #5356A4;
-  border-radius: 6px;
+  border-radius: .2em;
   color: #E9E9F3;
   padding: 2%; 
   font-weight: bold; 
@@ -115,9 +103,20 @@ label {
   background-color: #1F1F3D;
 }
 
+.searchbar-container {
+  display: flex;
+  flex-direction: row;
+  border: .15em solid #5356A4;
+  border-radius: .2em;
+}
+  
+#magnify-glass {
+  background-color: #353567;
+  padding: .2em 1.5em;
+  max-width: 3em;
+}
+
 #searchbar {
-  border: 3px solid #5356A4;
-  border-radius: 6px;
   padding: 2.5%; 
   width: 40vw;
   font-size: 1.9em;
@@ -157,12 +156,12 @@ label {
 h5 {
   font-size: 2em;
   font-weight: bold;
-  margin: 0em 0em 0em 1em;
+  margin: 0em 0em 0em .5em
 }
 
 .card-body {
   background-color: #FFFFFF;
-  padding: 15px;
+  padding: 10px;
   border: .2em solid #1F1F3D;
   overflow-wrap: break-word;
 }
@@ -171,7 +170,7 @@ h5 {
   font-size: 2.2em;
   font-weight: 200;
   color: #1F1F3D;
-  margin: .3em 1em 1em 1em;
+  margin: .2em 1em 1em .5em;
 }
 
 .card-bottom {
@@ -190,5 +189,6 @@ h5 {
 
 #white-comment {
   color: #E9E9F3;
-  font-size: 1.5em;
+  font-size: 1.6em;
+  font-weight: 400;
 }
