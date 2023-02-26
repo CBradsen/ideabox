@@ -1,7 +1,13 @@
 ## Abstract
- <!-- ##Abstract/Elevator Pitch** (what problem is app trying to solve?) -->
- <!-- - **ONE gif** (show the highest impact feature of your app) -->
+Hello fellow devs! When's the last time you had a great idea? What did you do with that idea does it live somewhere you can acess when you need it most? Well let us introduce you to the Ideabox storage app! We kept it simple and user friendly. Name your idea and add nescessary details to one card, if you're a fan of that ideacard you can favorite it and keep it for as long as you'd like if not you can delete it! Boom-Bang-Bow!
+
 ## Set Up Instructions**
+Step 1: Fork repository
+Step 2: Clone repository onto local machine
+Step 3: In terminal - change directory(cd) into newly cloned directory, can also use Finder to search for index.html
+Step 4: Open index.html file in browser
+Step 5: Now try out an Ideacard and all of it's functions!
+
 ## Contributors** (including who owned what pieces?)
 - [@Soyeon (Sara) Park](https://www.linkedin.com/in/soyeon-park-530780260/)
 - [@Isaiah Richardson](https://www.linkedin.com/in/isaiah-richardson-a59174261/)
