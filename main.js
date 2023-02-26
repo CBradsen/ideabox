@@ -5,12 +5,13 @@ var saveBtn = document.querySelector('.save-button');
 var inputTitle = document.getElementById('title-input');
 var inputBody = document.getElementById('body-input');
 var form = document.querySelector('.form-style');
-var cardTitle = document.querySelector('h5');
-var cardBody = document.getElementById('card-text');
 var ideaBoxContainer = document.querySelector('.idea-boxes-container');
+var searchBar = document.getElementById('searchbar');
 
 form.addEventListener('input', hoverSaveBtn);
 ideaBoxContainer.addEventListener('click', handleCard);
+searchBar.addEventListener('keyup', filterCards);
+
 saveBtn.addEventListener('click', function(event) {
     event.preventDefault();
     if (inputTitle.value && inputBody.value) {
@@ -66,6 +67,7 @@ function renderCard() {
                 <p id="white-comment">Comment</p>
             </div>    
         </article>`
+
     }
     clearInput();
 }
@@ -75,12 +77,7 @@ function clearInput() {
     deactivateSaveBtn();
 }
 
-function deleteCard(event) {
-    event.preventDefault();
-    
-}
-
-function removeCardFromArray(event){
+function removeCardFromArray(event) {
     for (var i = 0; i < ideas.length; i++) {
         if (event.target.parentElement.parentElement.id === ideas[i].id.toString()) {
             ideas.splice(i, 1);
@@ -93,22 +90,20 @@ function handleCard(event){
     if (event.target.id === "delete-icon") {
         removeCardFromArray(event);
         renderCard();
-    } else if (event.target.id.includes("-star")){
+    } else if (event.target.id.includes("-star")) {
         toggleStars(event);
     }   
 }
 
 function toggleStars(event){
     for (var i = 0; i < ideas.length; i++) {
-        if(event.target.parentElement.parentElement.id === ideas[i].id.toString()){
+        if (event.target.parentElement.parentElement.id === ideas[i].id.toString()) {
             ideas[i].updateIdea();
         } 
-        if(ideas[i].star === true){
+        if (ideas[i].star === true) {
             document.getElementById(`${ideas[i].id}-star`).src = "./assets/star-active.svg";  
         } else {
             document.getElementById(`${ideas[i].id}-star`).src = "./assets/star.svg";
         }
     }
 }
-
-

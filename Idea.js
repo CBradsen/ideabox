@@ -10,7 +10,7 @@ class Idea {
     if (this.star === false) {
       this.star = true;
     } else {
-      this.star = false
+      this.star = false;
     }   
   }
 }
