@@ -1,38 +1,18 @@
 * {
   font-family: 'Open Sans', sans-serif;
-  
 }
-
 
 body {
   display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* height: auto;  
-    /* max-width: 200px;  */
-    /* margin: 0, auto; */ 
-	/* max-width: 1080px;  */
-	
-
-
-	/* float: !important;  */
+  flex-direction: row;
+  justify-content: center;
 }
-
-
-/* aside {
-    background-color: #1F1F3D;
-    background-size: 100%;
-
-    width: 25vw;
-    
-} */
-
 
 aside {
   background-color: #1F1F3D;
+  background-size: 100%;
   width: 25vw;
-  height: auto;
-
+  height: 100vh
 }
 
 /* .form {
@@ -61,91 +41,87 @@ aside {
 /* } */
 
 aside h1 {
-
   color: #E9E9F3;
   font-size: 2.4em;
   padding-left: 1em;
-
 }
 
 .filter-aside-section {
   border-top: 3px solid #353567;
   border-bottom: 3px solid #353567;
-
 }
 
 h4 {
-    color: #BFBFDD;
-    font-size: 1.8em;
-    font-weight: bold;
-    padding-left: 1em;
+  color: #BFBFDD;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-left: 1em;
 } 
 
 .show-starred {
-    color: #E9E9F3;
-    background-color: #5356A4;
-    font-size: 2.2em;
-    font-weight: bold;
-
-    margin: .5em 1em 1.6em 1em;
-    padding: .4em 1.2em .5em .9em;
-
+  color: #E9E9F3;
+  background-color: #5356A4;
+  font-size: 2.2em;
+  font-weight: bold;
+  margin: .5em 1em 1.6em 1em;
+  padding: .4em 1.2em .5em .9em;
 }
 
 .form {
   display: flex;
   justify-content: center; 
   background-color: #A9AAD2;
-
   width: 75vw
   }
 
-
-.form-style{
+.form-style {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   padding: 1em 30em 4em 30em; 
-
-  /* max-width: 50vw; */
 }
 
 #title-input {
-  border: .3em solid #5356A4;
+  width: 100%;
+  box-sizing: border-box;
+  border: .1em solid #5356A4;
   border-radius: 6px;
   padding: 4%;
   margin: 1em 0em;
   font-weight: bold;
+  font-size: xx-large;
 }
 
 label {
   color: #1F1F3D;
   font-weight: bold;
-  font-size: 1.9em;
+  font-size: 1.8em;
 }
   
 #body-input {
-  border: .3em solid #5356A4;
-  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  border: .1em solid #5356A4;
+  border-radius: .3em;
   padding: 10%; 
   margin: 1em 0em;
   font-weight: bold;
+  font-size: xx-large;
 }
 
-.searchbar-container{
+.searchbar-container {
   display: flex;
   flex-direction: row;
-  border: .19em solid #5356A4;
+  border: .1em solid #5356A4;
   border-radius: 6px;
 }
   
-#magnify-glass{
+#magnify-glass {
   background-color: #353567;
   padding: .2em 1.5em;
   max-width: 3em;
 }
   
-.save-button{
+.save-button {
   font-size: 2.5em;
   background-color: #5356A4;
   border: .1em solid #5356A4;
@@ -156,7 +132,7 @@ label {
   margin: 1em 0em;
 }
 
-.hover:hover{
+.hover:hover {
   cursor: pointer;
 }
 
@@ -179,15 +155,14 @@ label {
   justify-content: flex-start;
   flex-wrap: wrap;
   background-color: #EAEAF4;
-  width: 75vw
+  width: 75vw;
+  height: 100vh;
 }
 
 .idea-box {
-  min-width: 300px;
-  max-width: 450px;
-  height: auto;
-  margin: 2em 1em; 
- /* border: 2px solid #1F1F3D; */
+  width: 300px;
+  height: 20vh;
+  margin: 1em; 
 }
 
 .card-top {
@@ -197,12 +172,12 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-height: 3em;
+  max-height: 3.4em;
 }
 
 
-#card-star, #delete-icon, #comment-plus-icon {
-  max-width: 4em;
+.card-star, #delete-icon, #comment-plus-icon {
+  max-width: 3.2em;
 
 }
 
@@ -215,7 +190,7 @@ h5 {
 .card-body {
   background-color: #FFFFFF;
   padding: 15px;
-  border: 1px solid #1F1F3D;
+  border: .2em solid #1F1F3D;
   overflow-wrap: break-word;
 }
 
@@ -223,26 +198,26 @@ h5 {
   font-size: 2.2em;
   font-weight: 200;
   color: #1F1F3D;
-  margin: .5em 1em 1em 1em;
+  margin: .3em 1em 1em 1em;
 }
 
 .card-bottom {
-  background-color: #1F1F3D;
-  border: 1px solid #1F1F3D;
-  padding: 0px; 
+  background-color: #5356A4;
+  border-right: .1em solid #1F1F3D;
+  border-bottom: .1em solid #1F1F3D;
+  border-left: .1em solid #1F1F3D;
   display: flex;
   flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 0px;
-  max-height: 40px;
+  max-height: 3.4em;
 }
 
-#comment {
-  color: #E9E9F3;
-  background-color: #5356A4;
 
-  /* padding: .3em 2em .3em .3em; */
-  margin-bottom: 0px;
-  /* font-size: 1.3em; */
+#white-comment {
+  color: #E9E9F3;
+  font-size: 1.5em;
 }
 
