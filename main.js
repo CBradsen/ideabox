@@ -45,10 +45,16 @@ function saveIdea() {
 function renderCard() {
     ideaBoxContainer.innerHTML = ' ';
     for (var i = 0; i < ideas.length; i++) {
+        var starIcon = " ";
+        if (ideas[i].star === false) {
+            starIcon = "star.svg"
+        } else {
+            starIcon = "star-active.svg"
+        }
         ideaBoxContainer.innerHTML += 
         `<article class="idea-box" id="${ideas[i].id}">
             <div class="card-top" id="card-header">
-                <img src="./assets/star.svg" alt="red-star-icon" class="card-star" id="${ideas[i].id}-star">
+                <img src="./assets/${starIcon}" alt="red-star-icon" class="card-star" id="${ideas[i].id}-star">
                 <img src="./assets/delete.svg" alt="white-delete-icon" id="delete-icon">
             </div>
             <div class="card-body" id="text-box-card">

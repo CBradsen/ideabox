@@ -146,7 +146,7 @@ label {
 
 .idea-box {
   width: 30em;
-  min-height: 20em;
+  height: 20em;
   margin: 1em; 
 }
 
@@ -175,6 +175,9 @@ h5 {
   padding: 10px;
   border: .2em solid #1F1F3D;
   overflow-wrap: break-word;
+  min-height: 20vh;
+  resize: vertical;
+  overflow: scroll;
 }
 
 #card-text {
