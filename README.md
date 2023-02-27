@@ -6,7 +6,8 @@ Hello fellow devs! When's the last time you had a great idea? What did you do wi
 - Step 2: Clone repository onto local machine
 - Step 3: Change directory (cd) into newly cloned directory
 - Step 4: Open index.html file in browser
-- Step 5: Now try out an Ideacard and all of it's functions!
+- Step 5: Best viewed on MacBook Pro!
+- Step 6: Now try out an Ideacard and all of it's functions!
 
 ## Context
 This app was created during the fourth week at Turing School of Software and Design. It took us approximately 20 hours to design the app.

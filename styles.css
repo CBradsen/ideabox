@@ -67,7 +67,6 @@ h4 {
 .form-style {
   display: flex;
   flex-direction: column;
-  /* padding: 1em 45em 4em 45em; */
 }
 
 label {
@@ -136,7 +135,7 @@ label {
 #searchbar {
   padding: 2.5%;
   width: 30vw;
-  font-size: 1.9em;
+  font-size: 1.7em;
   color: #5356A4;
 }
 
@@ -153,10 +152,10 @@ label {
 }
 
 .idea-box {
-  height: 10em;
+  height: 20em;
   width: 20em;
   min-height: 100%;
-  margin: 5em 1em 5em 1em;
+  margin: 1em 1em 5em 1em;
 }
 
 .card-top {
