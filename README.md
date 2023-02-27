@@ -4,7 +4,7 @@ Hello fellow devs! When's the last time you had a great idea? What did you do wi
 ## Set Up Instructions
 - Step 1: Fork repository
 - Step 2: Clone repository onto local machine
-- Step 3: In terminal - change directory(cd) into newly cloned directory, can also use Finder to search for index.html
+- Step 3: Change directory (cd) into newly cloned directory
 - Step 4: Open index.html file in browser
 - Step 5: Now try out an Ideacard and all of it's functions!
 
