@@ -1,11 +1,20 @@
 * {
   font-family: 'Open Sans', sans-serif;
 }
+* {
+  border: 2px solid red;
+}
 
 body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
 aside {
@@ -141,14 +150,14 @@ label {
   flex-wrap: wrap;
   background-color: #EAEAF4;
   width: 74vw;
-  height: 33vh;
+  height: 100%;
   padding-top: 1em;
   padding-left: 1em;
 }
 
 .idea-box {
   width: 20em;
-  height: 10em;
+  min-height: 10em;
   margin: 1em;
 }
 
